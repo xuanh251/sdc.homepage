@@ -1286,7 +1286,6 @@ footer .other-link .custom-select:focus {
     #carouselExample img{
         height: 100px;
     }
-    /* show 5 items */
     #carouselExample .carousel-inner .active, 
     #carouselExample .carousel-inner .active+.carousel-item, 
     #carouselExample .carousel-inner .active+.carousel-item+.carousel-item, 
@@ -1316,19 +1315,19 @@ footer .other-link .custom-select:focus {
         visibility: visible;
     }
     /* left or forward direction */
-    .active.carousel-item-left+.carousel-item-next.carousel-item-left, 
-    .carousel-item-next.carousel-item-left+.carousel-item, 
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, 
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, 
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    #carouselExample .active.carousel-item-left+.carousel-item-next.carousel-item-left, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         position: relative;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
     /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right {
+    #carouselExample .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
         top: 0;
         left: 0;
@@ -1337,13 +1336,13 @@ footer .other-link .custom-select:focus {
         visibility: visible;
     }
     /* right or prev direction */
-    .active.carousel-item-right+.carousel-item-prev.carousel-item-right, 
-    .carousel-item-prev.carousel-item-right+.carousel-item, 
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, 
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, 
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    #carouselExample .active.carousel-item-right+.carousel-item-prev.carousel-item-right, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         position: relative;
         transform: translate3d(100%, 0, 0);
         visibility: visible;
