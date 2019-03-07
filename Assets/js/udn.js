@@ -8,6 +8,7 @@ var udn = {
         }
     },
     registerEvent: function () {
+        $('[data-toggle="tooltip"]').tooltip(); 
         //swipe menu from left and right
         $(".btn-nav-onleft").on("click", function () {
             $(".mobileMenuLeft").toggleClass("open");

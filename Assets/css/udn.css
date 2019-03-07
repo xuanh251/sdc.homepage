@@ -1111,6 +1111,10 @@ footer .other-link .custom-select:focus {
 .udn-accordion{
     cursor: pointer;
 }
+.read-more-line span:hover{
+    background-color: #005493;
+    transition: all 0.25s;
+}
 @media (max-width: 500px){
     .col-udn-500{
         flex: 0 0 100%;
@@ -1124,8 +1128,8 @@ footer .other-link .custom-select:focus {
 }
 @media (max-width: 1024px){
     .img-logo {
-        width: 60px;
-        margin: 18px 8px 8px 0px;
+        width: 50px;
+        margin: 23px 8px 8px 0px;
     }
 }
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -1697,8 +1701,8 @@ footer .other-link .custom-select:focus {
         min-width: 175px;
     }
     .img-logo {
-        width: 60px;
-        margin: 15px 5px 5px 0px;
+        width: 40px;
+        margin: 22px 5px 5px 0px;
     }
 }
 @media (min-width:320px) and (max-width:400px) {
