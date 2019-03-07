@@ -1,0 +1,24 @@
+@media (max-width: 991px) {
+  .mobileMenuLeft {
+    transform: translateX(-100%);
+    /* position: fixed; */
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    transition: all ease 0.25s;
+  }
+  .mobileMenuLeft.open {
+    transform: translateX(0%);
+  }
+  .mobileMenuLeft.navbar-nav {
+    overflow-y: auto;
+  }
+  
+  .initHeight {
+    height: 0;
+  }
+  .fixHeight {
+    height: 330px!important;
+  }
+}
