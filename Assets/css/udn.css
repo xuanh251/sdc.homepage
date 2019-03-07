@@ -572,6 +572,7 @@ li.nav-item {
     flex-wrap: nowrap;
 }
 .udn-over-scroll::-webkit-scrollbar, .udn-top-nav::-webkit-scrollbar {
+    border-radius: 15px;
     height: 5px;
     width: 5px;
     background-color: #F5F5F5;
@@ -1382,21 +1383,21 @@ footer .other-link .custom-select:focus {
     #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item{
         transition: none;
     }
-    .active.carousel-item-left+.carousel-item-next.carousel-item-left, 
-    .carousel-item-next.carousel-item-left+.carousel-item, 
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, 
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, 
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item{
+    #carouselExample .active.carousel-item-left+.carousel-item-next.carousel-item-left, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item{
         position: relative;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
     /* right or prev direction */
-    .active.carousel-item-right+.carousel-item-prev.carousel-item-right, 
-    .carousel-item-prev.carousel-item-right+.carousel-item, 
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, 
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, 
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item
+    #carouselExample .active.carousel-item-right+.carousel-item-prev.carousel-item-right, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, 
+    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item
     {
         position: relative;
         transform: translate3d(100%, 0, 0);
@@ -1409,10 +1410,13 @@ footer .other-link .custom-select:focus {
     #top-link .row div:nth-child(1) {
         text-align: right;
         padding-right: 0;
+        margin-left: 14%
     }
     #top-link .row div:nth-child(2) {
-        text-align: left;
+        text-align: right;
         padding-left: 0;
+        max-width: 36%;
+        padding-right: 13px;
     }
     .event-list .event-item {
         padding: 20px 10px 20px;
@@ -1522,6 +1526,10 @@ footer .other-link .custom-select:focus {
 }
 
 @media (min-width: 576px) and (max-width:767px) {
+    .img-logo {
+        margin: 17px 8px 8px 0px;
+        width: 60px;
+    }
     #top-link .row div:nth-child(1) {
         padding-left: 0;
     }
@@ -1533,6 +1541,17 @@ footer .other-link .custom-select:focus {
     }
     .right-list {
         margin-top: 10px;
+    }
+}
+@media (min-width: 565px) and (max-width: 570px){
+    #top-link .row div:nth-child(2) {
+        text-align: right;
+    }
+}
+@media (max-width: 564px){
+    .col-udn-564{
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 }
 
@@ -1552,9 +1571,19 @@ footer .other-link .custom-select:focus {
     #second-search-form input {
         min-width: 280px;
     }
+    #second-search-form .form-inline {
+        margin: 5px 0px 15px;
+    }
 }
 
 @media (max-width:575px) {
+    #top-link .row div {
+        text-align: left;
+    }
+    .img-logo {
+        width: 55px;
+        margin: 20px 8px 8px 0px;
+    }
     #udn-application {
         flex-direction: row!important;
     }
