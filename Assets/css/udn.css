@@ -571,6 +571,22 @@ li.nav-item {
     overflow-y: hidden;
     flex-wrap: nowrap;
 }
+.udn-over-scroll::-webkit-scrollbar, .udn-top-nav::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background-color: #F5F5F5;
+} 
+#list-member::-webkit-scrollbar-thumb {
+    background-color: #0E3450;
+}
+.udn-over-scroll::-webkit-scrollbar-thumb, .udn-top-nav::-webkit-scrollbar-thumb {
+    background-color: #2A8FD8;
+    border-radius: 15px;
+}
+.udn-over-scroll::-webkit-scrollbar-track, .udn-top-nav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
 
 #list-member .nav-item {
     width: auto;
