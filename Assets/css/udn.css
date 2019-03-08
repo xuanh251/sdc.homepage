@@ -571,21 +571,25 @@ li.nav-item {
     overflow-y: hidden;
     flex-wrap: nowrap;
 }
+
 .udn-over-scroll::-webkit-scrollbar, .udn-top-nav::-webkit-scrollbar {
     border-radius: 15px;
     height: 5px;
     width: 5px;
     background-color: #F5F5F5;
-} 
+}
+
 #list-member::-webkit-scrollbar-thumb {
     background-color: #0E3450;
 }
+
 .udn-over-scroll::-webkit-scrollbar-thumb, .udn-top-nav::-webkit-scrollbar-thumb {
     background-color: #2A8FD8;
     border-radius: 15px;
 }
+
 .udn-over-scroll::-webkit-scrollbar-track, .udn-top-nav::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
 }
 
@@ -1014,9 +1018,11 @@ footer .other-link .custom-select:focus {
 #copyright .social img:hover {
     opacity: 1;
 }
-#carouselExample .carousel-item{
+
+#carouselExample .carousel-item {
     margin-right: 0%!important;
 }
+
 .icon {
     display: inline-block;
     position: relative;
@@ -1029,10 +1035,12 @@ footer .other-link .custom-select:focus {
     line-height: 21px;
     text-align: center;
 }
-.icon{
+
+.icon {
     opacity: 0.7;
 }
-.icon:hover{
+
+.icon:hover {
     opacity: 1;
 }
 
@@ -1090,48 +1098,120 @@ footer .other-link .custom-select:focus {
     transform: scale(1);
     opacity: 1;
 }
+
 .udn-footer {
     background-color: #0076b5;
     border-top: 1px solid white;
     color: white;
     font-size: 16px;
 }
+
 .udn-footer .container .row div:nth-child(2) {
     text-align: right;
 }
-.udn-link img{
+
+.udn-link img {
     width: 100%;
 }
+
 .accordion .col-md div:nth-child(2n+1) a:first-child h4::before {
     content: "- ";
 }
+
 .accordion .col-md div.collapsed a:first-child h4::before {
     content: "+ ";
 }
-.udn-accordion{
+
+.udn-accordion {
     cursor: pointer;
 }
-.read-more-line span:hover{
+
+.read-more-line span:hover {
     background-color: #005493;
     transition: all 0.25s;
 }
-@media (max-width: 500px){
-    .col-udn-500{
+
+.udn-btn-toplink-toggle .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.udn-btn-toplink-toggle {
+    border: 1px solid #80B2D7;
+    padding: 5px;
+}
+
+.udn-btn-toplink-toggle span {
+    width: 20px;
+    height: 15px;
+    margin-bottom: 1px;
+}
+
+.navbar-toggler-icon:hover {
+    cursor: pointer;
+}
+@media(min-width: 1200px){
+    .udn-top-toggle-link div:nth-child(3){
+        padding-left: 70px;
+    }
+}
+@media(min-width: 992px) and (max-width:1199px){
+    .udn-top-toggle-link div:nth-child(3){
+        padding-left: 60px;
+    }
+}
+@media(min-width:565px) {
+    #js-toggle-class {
+        display: none;
+    }
+}
+
+@media(max-width: 564px) {
+    .visuallyhidden {
+        opacity: 0;
+    }
+    .udn-header div:first-child() {
+        transition: all 0.25s ease-in-out;
+    }
+    .udn-show-menu {
+        display: block!important;
+        transition: all 0.25s linear;
+    }
+    .udn-hide-menu {
+        display: none!important;
+        opacity: 0;
+    }
+    .udn-top-toggle-link div:nth-child(n+2) {
+        display: none;
+    }
+    .udn-toggle-margin {
+        transition: all 0.25s ease-in-out;
+        margin: -28px 0px 5px;
+    }
+    .site-name-small {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .col-udn-500 {
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
-@media (min-width:400px) and (max-width:500px){
+
+@media (min-width:400px) and (max-width:500px) {
     #news-category .box:before {
         padding-top: 92%!important;
     }
 }
-@media (max-width: 1024px){
+
+@media (max-width: 1024px) {
     .img-logo {
         width: 50px;
         margin: 23px 8px 8px 0px;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1024px) {
     .udn-top-nav li a {
         font-size: 11.5px!important;
@@ -1298,35 +1378,28 @@ footer .other-link .custom-select:focus {
         padding: 4px 8px;
     }
 }
-
+@media (min-width:992px){
+    #second-search-form{
+        display: none!important;
+    }
+}
 @media (min-width:992px) and (max-width:1199px) {
     .udn-top-nav .nav-item {
         padding-right: 1%;
     }
-    #top-link .row div:nth-child(2) ul {
+    #top-link .row div:nth-child(3) ul {
         margin-left: 12px;
     }
 }
 
 @media (min-width: 768px) {
-
-    #carouselExample img{
+    #carouselExample img {
         height: 100px;
     }
-    #carouselExample .carousel-inner .active, 
-    #carouselExample .carousel-inner .active+.carousel-item, 
-    #carouselExample .carousel-inner .active+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    #carouselExample .carousel-inner .active, #carouselExample .carousel-inner .active+.carousel-item, #carouselExample .carousel-inner .active+.carousel-item+.carousel-item, #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         display: block;
     }
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left), 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item, 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left), #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item, #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item, #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         transition: none;
     }
     .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev {
@@ -1342,13 +1415,7 @@ footer .other-link .custom-select:focus {
         visibility: visible;
     }
     /* left or forward direction */
-    #carouselExample .active.carousel-item-left+.carousel-item-next.carousel-item-left, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    #carouselExample .active.carousel-item-left+.carousel-item-next.carousel-item-left, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         position: relative;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
@@ -1363,13 +1430,7 @@ footer .other-link .custom-select:focus {
         visibility: visible;
     }
     /* right or prev direction */
-    #carouselExample .active.carousel-item-right+.carousel-item-prev.carousel-item-right, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item,
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+    #carouselExample .active.carousel-item-right+.carousel-item-prev.carousel-item-right, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         position: relative;
         transform: translate3d(100%, 0, 0);
         visibility: visible;
@@ -1377,38 +1438,27 @@ footer .other-link .custom-select:focus {
         visibility: visible;
     }
 }
-@media(max-width:767px){
-    #carouselExample img{
+
+@media(max-width:767px) {
+    #udn-map-info{
+        display: none!important;
+    }
+    #carouselExample img {
         height: 100px;
     }
-    #carouselExample .carousel-inner .active, 
-    #carouselExample .carousel-inner .active+.carousel-item, 
-    #carouselExample .carousel-inner .active+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item{
+    #carouselExample .carousel-inner .active, #carouselExample .carousel-inner .active+.carousel-item, #carouselExample .carousel-inner .active+.carousel-item+.carousel-item, #carouselExample .carousel-inner .active+.carousel-item+.carousel-item+.carousel-item {
         display: block;
     }
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left), 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item, 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item{
+    #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left), #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item, #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item, #carouselExample .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
         transition: none;
     }
-    #carouselExample .active.carousel-item-left+.carousel-item-next.carousel-item-left, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item{
+    #carouselExample .active.carousel-item-left+.carousel-item-next.carousel-item-left, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         position: relative;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
     /* right or prev direction */
-    #carouselExample .active.carousel-item-right+.carousel-item-prev.carousel-item-right, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, 
-    #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item
-    {
+    #carouselExample .active.carousel-item-right+.carousel-item-prev.carousel-item-right, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item, #carouselExample .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
         position: relative;
         transform: translate3d(100%, 0, 0);
         visibility: visible;
@@ -1416,15 +1466,18 @@ footer .other-link .custom-select:focus {
         visibility: visible;
     }
 }
+
 @media (min-width: 768px) and (max-width:991px) {
-    #top-link .row div:nth-child(1) {
-        text-align: right;
-        padding-right: 0;
-        margin-left: 14%
-    }
     #top-link .row div:nth-child(2) {
         text-align: right;
-        padding-left: 0;
+        padding-right: 0;
+        margin-left: 21%
+    }
+    .udn-top-toggle-link div:nth-child(3){
+        padding-left: 5px;
+    }
+    #top-link .row div:nth-child(3) {
+        text-align: right;
         max-width: 36%;
         padding-right: 13px;
     }
@@ -1457,8 +1510,13 @@ footer .other-link .custom-select:focus {
         white-space: nowrap;
     }
 }
-
+@media (max-width:767px) and (min-width:565px){
+    .udn-top-toggle-link div:nth-child(3){
+        padding-left: 65px;
+    }
+}
 @media (min-width: 320px) and (max-width:767px) {
+    
     #news-featured .content {
         padding: 0;
     }
@@ -1489,7 +1547,7 @@ footer .other-link .custom-select:focus {
 }
 
 @media (min-width: 320px) and (max-width:991px) {
-    .udn-top-nav{
+    .udn-top-nav {
         overflow-y: auto;
     }
     .application-links {
@@ -1525,7 +1583,8 @@ footer .other-link .custom-select:focus {
         margin: 20px 0px 15px 31px;
     }
 }
-@media (max-width: 766px){
+
+@media (max-width: 766px) {
     .udn-footer {
         text-align: center;
     }
@@ -1540,10 +1599,10 @@ footer .other-link .custom-select:focus {
         margin: 17px 8px 8px 0px;
         width: 60px;
     }
-    #top-link .row div:nth-child(1) {
+    #top-link .row div:nth-child(2) {
         padding-left: 0;
     }
-    #top-link .row div:nth-child(2) {
+    #top-link .row div:nth-child(3) {
         padding-right: 0;
     }
     .img-fluid {
@@ -1553,19 +1612,24 @@ footer .other-link .custom-select:focus {
         margin-top: 10px;
     }
 }
-@media (min-width: 565px) and (max-width: 570px){
-    #top-link .row div:nth-child(2) {
+
+@media (min-width: 565px) and (max-width: 570px) {
+    #top-link .row div:nth-child(3) {
         text-align: right;
     }
 }
-@media (max-width: 564px){
-    .col-udn-564{
-        max-width: 100%;
+
+@media (max-width: 564px) {
+    .col-udn-564 {
+        max-width: 91%;
         flex: 0 0 100%;
     }
 }
 
 @media (max-width:991px) {
+    #first-search-form{
+        display: none!important;
+    }
     #top-link {
         text-align: center;
     }
@@ -1587,7 +1651,7 @@ footer .other-link .custom-select:focus {
 }
 
 @media (max-width:575px) {
-    #top-link .row div {
+    #top-link .row div:nth-child(n+2) {
         text-align: left;
     }
     .img-logo {
@@ -1597,10 +1661,10 @@ footer .other-link .custom-select:focus {
     #udn-application {
         flex-direction: row!important;
     }
-    #udn-application.card-group>.card{
+    #udn-application.card-group>.card {
         margin-bottom: 0px!important;
     }
-    #udn-application.card-group>.card:first-child,#udn-application.card-group>.card:nth-child(2){
+    #udn-application.card-group>.card:first-child, #udn-application.card-group>.card:nth-child(2) {
         margin-top: 10px;
     }
     .udn-list-news-carousel .card {
@@ -1615,7 +1679,6 @@ footer .other-link .custom-select:focus {
     #news-category .box:before {
         padding-top: 58%;
     }
-    
     #second-search-form button {
         margin-left: 8px;
     }
@@ -1633,6 +1696,9 @@ footer .other-link .custom-select:focus {
 @media (max-width: 417px) {
     #list-member li:first-child a {
         padding-left: 23px!important;
+    }
+    .site-name{
+        font-size: 33px;
     }
 }
 
@@ -1668,8 +1734,9 @@ footer .other-link .custom-select:focus {
         margin: 20px 0px 15px -5px;
     }
 }
-@media (min-width:376px) and (max-width:400px){
-    .site-name-small{
+
+@media (min-width:376px) and (max-width:400px) {
+    .site-name-small {
         font-size: 18px;
     }
     .site-name {
@@ -1683,10 +1750,11 @@ footer .other-link .custom-select:focus {
         margin-left: 2px;
     }
 }
+
 @media (max-width:375px) {
-    .site-name-small{
+    /* .site-name-small{
         font-size: 16px;
-    }
+    } */
     .site-name {
         white-space: normal;
         font-size: 29px;
@@ -1702,15 +1770,16 @@ footer .other-link .custom-select:focus {
     }
     .img-logo {
         width: 40px;
-        margin: 22px 5px 5px 0px;
+        margin: 18px 5px 5px 0px;
     }
 }
+
 @media (min-width:320px) and (max-width:400px) {
     #news-category .box:before {
         padding-top: 130%;
     }
-
 }
+
 @media (max-width:320px) {
     .site-name {
         white-space: normal;
